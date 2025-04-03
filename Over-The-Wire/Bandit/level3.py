@@ -7,4 +7,5 @@ cmd = 'cat "spaces in this filename"'
 
 s =  ssh(host=hostname, user=username, password=password)
 ex = s.run(cmd)
+
 print ex.recvall()
