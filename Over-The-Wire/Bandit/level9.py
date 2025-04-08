@@ -1,9 +1,9 @@
 from pwn import *
 
 hostname = 'bandit.labs.overthewire.org'
-username = 'bandit7'
-password = 'HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs'
-cmd = "grep \"millionth\" data.txt | awk -F'\t' '{print $2}'"
+username = 'bandit8'
+password = 'cvX2JJa4CFALtqS87jk27qwqGhBM9plV'
+cmd = 'sort data.txt | uniq -u'
 
 s =  ssh(host=hostname, user=username, password=password)
 ex = s.run(cmd)
